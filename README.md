@@ -150,8 +150,10 @@ def power(request):
     return render(request, 'pow.html', {'power': power})
 ```
 # SERVER SIDE PROCESSING:
-!(<Screenshot 2025-12-18 220212.png>)
+<img width="1169" height="850" alt="Screenshot 2025-12-18 220212" src="https://github.com/user-attachments/assets/acf5a64e-617a-48b3-829c-8579ae823c40" />
+
 # HOMEPAGE:
-!(<Screenshot 2025-12-18 220106.png>)
+<img width="1887" height="883" alt="Screenshot 2025-12-18 220106" src="https://github.com/user-attachments/assets/377701d3-db0b-4d92-a83e-921500acd4a5" />
+
 # RESULT:
 The program for performing server side processing is completed successfully.
