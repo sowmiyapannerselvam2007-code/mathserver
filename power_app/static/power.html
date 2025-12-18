@@ -1,0 +1,103 @@
+{% load static %}
+<html>
+<head>
+    <title>Power Calculation</title>
+
+    <style>
+
+        body{
+            text-align: center;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #b1e568 0%, #fefe4d 100%);
+            font-family: "Poppins", sans-serif;
+        }
+
+        .yo{
+            width: 400px;
+            padding: 40px;
+            backdrop-filter: blur(12px);
+            background: rgba(42, 228, 22, 0.1);
+            border-radius: 18px;
+            border:1px solid rgba(46, 228, 49, 0.35);
+            box-shadow: 0 8px 25px rgba(35, 220, 18, 0.4);
+            
+        }
+
+        
+
+        h1{
+            font-size: 38px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-size: 20px;
+            color:#eee;
+            text-align:left;
+        }
+
+        input{
+            padding:10px;
+            width:90%;
+            border:none;
+            margin-top:10px;
+            background:rgba(5, 5, 5, 0.18);
+            border-radius:8px;
+            color:white;
+            outline:none;
+        }
+
+        button{
+            width:100%;
+            margin-top:15px;
+            padding:10px;
+            border:none;
+            border-radius:10px;
+            cursor:pointer;
+            background:#d52825;
+            color:white;
+            font-size:17px;
+            
+        }
+
+        button:hover{
+            background:#ff8767;
+        }
+
+        pre{
+            color:#fff;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="yo">
+<h1>Power Calculator</h1><br>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <label>Intensity:
+        <input type="number" name="intensity" required placeholder="Enter in cd"><br><br>
+    </label>
+
+    <label>Resistance:
+        <input type="number" name="resistance" required placeholder="Enter in Ohms"><br><br>
+    </label>
+
+    <button type="submit">Calculate</button><br><br>
+
+    <label>Power:</label>
+    <input type="text" value="{{ power }}" readonly> <pre> Watts </pre>
+
+</form>
+</div>
+</body>
+</html>
