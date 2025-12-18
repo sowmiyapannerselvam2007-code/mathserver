@@ -1,5 +1,5 @@
 # Ex.05 Design a Website for Server Side Processing
-# Date:
+# Date:18.12.2025
 # AIM:
 To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side.
 
@@ -150,8 +150,8 @@ def power(request):
     return render(request, 'pow.html', {'power': power})
 ```
 # SERVER SIDE PROCESSING:
-![alt text](<Screenshot 2025-12-18 220212.png>)
+!(<Screenshot 2025-12-18 220212.png>)
 # HOMEPAGE:
-![alt text](<Screenshot 2025-12-18 220106.png>)
+!(<Screenshot 2025-12-18 220106.png>)
 # RESULT:
 The program for performing server side processing is completed successfully.
